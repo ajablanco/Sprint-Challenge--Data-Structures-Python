@@ -31,6 +31,7 @@ for el in names_2:
 # not more optimized will stick with original solution
 for el in names_1:
     duplicates.append(el)
+    # comprehension
 duplicates = [el for el in names_2 if el in duplicates]
 
 end_time = time.time()
