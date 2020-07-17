@@ -26,6 +26,13 @@ for el in names_2:
     if new_bst.contains(el):
         duplicates.append(el)
 
+# stretch
+# runtime increase to  2.353788137435913 seconds
+# not more optimized will stick with original solution
+for el in names_1:
+    duplicates.append(el)
+duplicates = [el for el in names_2 if el in duplicates]
+
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
